@@ -3,7 +3,7 @@ import pizzaImage from '../assets/Pizza_Palace.png';
 import './restaurantCard.css';
 
 const RestaurantCard = ({ restaurant }) => {
-  const { name, location, cuisine, opening_time, closing_time, image } = restaurant;
+  const { name, location, cuisine, opening_time, closing_time } = restaurant;
 
   return (
     <div className="restaurant-card">
@@ -21,6 +21,10 @@ const RestaurantCard = ({ restaurant }) => {
           <p><strong>Closing:</strong> {closing_time}</p>
         </div>
       </div>
+      {/* Full width button at bottom */}
+      <button className="view-menu-btn">
+        View Menu
+      </button>
     </div>
   );
 };
